@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyProfile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yagom" translatesAutoresizingMaskIntoConstraints="NO" id="RwA-Oo-Wcr">
+                                <rect key="frame" x="16" y="60" width="100" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RwA-Oo-Wcr" secondAttribute="height" multiplier="167:160" id="5ME-Z5-IMU"/>
+                                    <constraint firstAttribute="width" constant="100" id="8XP-Xj-aKj"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이름" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A97-Lm-hTF">
+                                <rect key="frame" x="124" y="60" width="274" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVW-Ck-Bwq">
+                                <rect key="frame" x="124" y="93" width="274" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1AF-ry-W55">
+                                <rect key="frame" x="16" y="172" width="382" height="674"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HIx-lM-RPO">
+                                <rect key="frame" x="124" y="126" width="274" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OVW-Ck-Bwq" firstAttribute="leading" secondItem="A97-Lm-hTF" secondAttribute="leading" id="Aa8-Ft-MYv"/>
+                            <constraint firstItem="HIx-lM-RPO" firstAttribute="bottom" secondItem="RwA-Oo-Wcr" secondAttribute="bottom" id="C3W-1U-RaH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1AF-ry-W55" secondAttribute="trailing" constant="16" id="DaI-25-oKU"/>
+                            <constraint firstItem="HIx-lM-RPO" firstAttribute="trailing" secondItem="OVW-Ck-Bwq" secondAttribute="trailing" id="If1-64-ggA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="A97-Lm-hTF" secondAttribute="trailing" constant="16" id="Lt0-lT-x5G"/>
+                            <constraint firstItem="1AF-ry-W55" firstAttribute="leading" secondItem="RwA-Oo-Wcr" secondAttribute="leading" id="RTg-3L-RIY"/>
+                            <constraint firstItem="RwA-Oo-Wcr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Tja-cO-ypu"/>
+                            <constraint firstItem="A97-Lm-hTF" firstAttribute="leading" secondItem="RwA-Oo-Wcr" secondAttribute="trailing" constant="8" id="VJP-kC-h8z"/>
+                            <constraint firstItem="OVW-Ck-Bwq" firstAttribute="trailing" secondItem="A97-Lm-hTF" secondAttribute="trailing" id="dYI-4X-os7"/>
+                            <constraint firstItem="1AF-ry-W55" firstAttribute="top" secondItem="RwA-Oo-Wcr" secondAttribute="bottom" constant="16" id="g1e-2H-bk8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="1AF-ry-W55" secondAttribute="bottom" constant="16" id="mde-bg-bPL"/>
+                            <constraint firstItem="OVW-Ck-Bwq" firstAttribute="centerY" secondItem="RwA-Oo-Wcr" secondAttribute="centerY" id="n30-Ge-ZDH"/>
+                            <constraint firstItem="A97-Lm-hTF" firstAttribute="top" secondItem="RwA-Oo-Wcr" secondAttribute="top" id="p1F-c6-8AU"/>
+                            <constraint firstItem="1AF-ry-W55" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="tKE-lQ-Z6k"/>
+                            <constraint firstItem="RwA-Oo-Wcr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="tuS-bT-7Ii"/>
+                            <constraint firstItem="HIx-lM-RPO" firstAttribute="leading" secondItem="OVW-Ck-Bwq" secondAttribute="leading" id="vKS-sw-K2m"/>
+                            <constraint firstItem="HIx-lM-RPO" firstAttribute="trailing" secondItem="1AF-ry-W55" secondAttribute="trailing" id="yon-Me-rYl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="yagom" width="167" height="160.5"/>
+    </resources>
+</document>
